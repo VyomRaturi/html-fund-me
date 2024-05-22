@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">
+      The best place for you to fund and withdraw through a Smart Contract
+    </h1>
+    <div>
+      <button id="connectButton" class="button">Connect to Metamask</button>
+      <span id="connectButtonFlag"></span>
+    </div>
+    <div>
+      <label for="ethAmt">Enter Amount to Fund</label>
+      <input
+        id="ethAmt"
+        placeholder="Enter Amt"
+        type="number"
+        class="takeInput"
+      />
+      <button id="fundButton" class="button">FundMe</button>
+      <span id="fundResponse"></span>
+    </div>
+
+    <div>
+      <label for="withdrawButton"> Click Withdraw to withdraw </label>
+      <button id="withdrawButton" class="button">Withdraw</button>
+      <span id="withdrawMessage"></span>
+    </div>
+
+    <div>
+      <span>Get Balance: </span>
+      <button id="balanceButton" class="button">Balance</button>
+      <span id="balanceButtonResponse"></span>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
